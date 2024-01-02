@@ -2,6 +2,7 @@
 
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,10 +21,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
-    <!--
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Мета-тег viewport важливий для адаптивних сторінок</title>-->
   </head>
 
   <!--Header section-->
@@ -57,11 +54,108 @@
           </ul>
         </address>
       </div>
-    </header>
 
-    <!--Unique section-->
+      <!--BURGER MOBILE MENU-->
+
+      <div class="burger-menu /is-open">
+        <div class="burger-button-div">
+          <button type="button" class="button-x-burger">
+            <svg class="icon-x-burger" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="burger-nav-div">
+          <nav class="mobile-nav-menu">
+            <ul class="mobile-navigation">
+              <li>
+                <a href="./index.html" class="burger-nav-href">Studio</a>
+              </li>
+              <li>
+                <a href="" class="burger-nav-href">Portfolio</a>
+              </li>
+              <li>
+                <a href="" class="burger-nav-href">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="burger-address-div">
+          <address class="burger-address">
+            <ul class="burg-address-ul">
+              <li class="burg-address-li">
+                <a href="mailto:info@devstudio.com" class="burger-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="burg-address-li">
+                <a href="tel:+110001111111" class="burger-phone"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="burger-div-link">
+          <ul class="burger-link">
+            <li class="burger-li-icons">
+              <a
+                href=""
+                target="_blank"
+                class="burger-icons-href"
+                aria-label="Instagrma link"
+              >
+                <svg class="burger-svg-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-li-icons">
+              <a
+                href=""
+                target="_blank"
+                class="burger-icons-href"
+                aria-label="Twitter link"
+              >
+                <svg class="burger-svg-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-li-icons">
+              <a
+                href=""
+                target="_blank"
+                class="burger-icons-href"
+                aria-label="Facebook link"
+              >
+                <svg class="burger-svg-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-li-icons">
+              <a
+                href=""
+                target="_blank"
+                class="burger-icons-href"
+                aria-label="Linkedin link"
+              >
+                <svg class="burger-svg-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!--Hero section-->
+
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-img">Effective Solutions for Your Business</h1>
@@ -133,10 +227,12 @@
       </section>
 
       <!--Team Section-->
+
       <section class="section-team">
-        <div class="container">
-          <h2 class="text-team">Our Team</h2>
-          <ul class="team-ul">
+        <div class="team-container container">
+          <h2 class="our-team">Our Team</h2>
+
+          <ul class="team-icons">
             <li class="team-member">
               <img
                 src="./images/img-3.jpg"
@@ -532,7 +628,7 @@
 
     <!--Modal-hero sections -->
 
-    <div class="backdrop is-open">
+    <div class="backdrop .is-open">
       <div class="modal-container">
         <button class="modal-btn" type="button">
           <svg class="modal-x" width="8" height="8">
